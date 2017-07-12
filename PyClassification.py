@@ -143,8 +143,7 @@ def allowed_file(filename):
 class ImagenetClassifier(object):
   default_args = {
       'model_def_file': ('/tmp/frozen_inception_v3.pb'),
-      'class_labels_file': ('/usr/local/google/home/zyin'
-                            '/datasets/msceleb_thumbnails_samples/labels.txt'),
+      'class_labels_file': (os.path.join(REPO_DIRNAME, 'labels.txt')),
   }
   for key, val in default_args.iteritems():
     if not os.path.exists(val):
