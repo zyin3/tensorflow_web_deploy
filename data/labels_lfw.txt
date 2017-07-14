@@ -1,100 +1,100 @@
-0:Abdullah_Gul
-1:Alejandro_Toledo
-2:Alvaro_Uribe
-3:Amelie_Mauresmo
-4:Andre_Agassi
-5:Andy_Roddick
-6:Angelina_Jolie
-7:Ariel_Sharon
-8:Arnold_Schwarzenegger
-9:Atal_Bihari_Vajpayee
-10:Bill_Clinton
-11:Bill_Gates
-12:Bill_Simon
-13:Carlos_Menem
-14:Carlos_Moya
-15:Colin_Powell
-16:David_Beckham
-17:Dominique_de_Villepin
-18:Donald_Rumsfeld
-19:Fidel_Castro
-20:George_Robertson
-21:George_W_Bush
-22:Gerhard_Schroeder
-23:Gloria_Macapagal_Arroyo
-24:Gray_Davis
-25:Guillermo_Coria
-26:Halle_Berry
-27:Hamid_Karzai
-28:Hans_Blix
-29:Hu_Jintao
-30:Hugo_Chavez
-31:Igor_Ivanov
-32:Jack_Straw
-33:Jacques_Chirac
-34:Jean_Charest
-35:Jean_Chretien
-36:Jennifer_Aniston
-37:Jennifer_Capriati
-38:Jennifer_Lopez
-39:Jeremy_Greenstock
-40:Jiang_Zemin
-41:John_Ashcroft
-42:John_Bolton
-43:John_Howard
-44:John_Kerry
-45:John_Negroponte
-46:John_Snow
-47:Joschka_Fischer
-48:Jose_Maria_Aznar
-49:Juan_Carlos_Ferrero
-50:Julianne_Moore
-51:Julie_Gerberding
-52:Junichiro_Koizumi
-53:Kim_Clijsters
-54:Kofi_Annan
-55:Lance_Armstrong
-56:Laura_Bush
-57:Lindsay_Davenport
-58:Lleyton_Hewitt
-59:Luiz_Inacio_Lula_da_Silva
-60:Mahathir_Mohamad
-61:Mahmoud_Abbas
-62:Megawati_Sukarnoputri
-63:Meryl_Streep
-64:Michael_Bloomberg
-65:Michael_Schumacher
-66:Mohammed_Al-Douri
-67:Nancy_Pelosi
-68:Naomi_Watts
-69:Nestor_Kirchner
-70:Nicole_Kidman
-71:Norah_Jones
-72:Paul_Bremer
-73:Pervez_Musharraf
-74:Pete_Sampras
-75:Pierce_Brosnan
-76:Recep_Tayyip_Erdogan
-77:Renee_Zellweger
-78:Ricardo_Lagos
-79:Richard_Myers
-80:Roger_Federer
-81:Roh_Moo-hyun
-82:Rudolph_Giuliani
-83:Saddam_Hussein
-84:Serena_Williams
-85:Silvio_Berlusconi
-86:Spencer_Abraham
-87:Taha_Yassin_Ramadan
-88:Tiger_Woods
-89:Tim_Henman
-90:Tom_Daschle
-91:Tom_Ridge
-92:Tommy_Franks
-93:Tony_Blair
-94:Trent_Lott
-95:Venus_Williams
-96:Vicente_Fox
-97:Vladimir_Putin
-98:Winona_Ryder
-99:Yoriko_Kawaguchi
+Abdullah Gul
+Alejandro Toledo
+Alvaro Uribe
+Amelie Mauresmo
+Andre Agassi
+Andy Roddick
+Angelina Jolie
+Ariel Sharon
+Arnold Schwarzenegger
+Atal Bihari Vajpayee
+Bill Clinton
+Bill Gates
+Bill Simon
+Carlos Menem
+Carlos Moya
+Colin Powell
+David Beckham
+Dominique de Villepin
+Donald Rumsfeld
+Fidel Castro
+George Robertson
+George W Bush
+Gerhard Schroeder
+Gloria Macapagal Arroyo
+Gray Davis
+Guillermo Coria
+Halle Berry
+Hamid Karzai
+Hans Blix
+Hu Jintao
+Hugo Chavez
+Igor Ivanov
+Jack Straw
+Jacques Chirac
+Jean Charest
+Jean Chretien
+Jennifer Aniston
+Jennifer Capriati
+Jennifer Lopez
+Jeremy Greenstock
+Jiang Zemin
+John Ashcroft
+John Bolton
+John Howard
+John Kerry
+John Negroponte
+John Snow
+Joschka Fischer
+Jose Maria Aznar
+Juan Carlos Ferrero
+Julianne Moore
+Julie Gerberding
+Junichiro Koizumi
+Kim Clijsters
+Kofi Annan
+Lance Armstrong
+Laura Bush
+Lindsay Davenport
+Lleyton Hewitt
+Luiz Inacio Lula da Silva
+Mahathir Mohamad
+Mahmoud Abbas
+Megawati Sukarnoputri
+Meryl Streep
+Michael Bloomberg
+Michael Schumacher
+Mohammed Al-Douri
+Nancy Pelosi
+Naomi Watts
+Nestor Kirchner
+Nicole Kidman
+Norah Jones
+Paul Bremer
+Pervez Musharraf
+Pete Sampras
+Pierce Brosnan
+Recep Tayyip Erdogan
+Renee Zellweger
+Ricardo Lagos
+Richard Myers
+Roger Federer
+Roh Moo-hyun
+Rudolph Giuliani
+Saddam Hussein
+Serena Williams
+Silvio Berlusconi
+Spencer Abraham
+Taha Yassin Ramadan
+Tiger Woods
+Tim Henman
+Tom Daschle
+Tom Ridge
+Tommy Franks
+Tony Blair
+Trent Lott
+Venus Williams
+Vicente Fox
+Vladimir Putin
+Winona Ryder
+Yoriko Kawaguchi
