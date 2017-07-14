@@ -142,8 +142,8 @@ def allowed_file(filename):
 
 class ImagenetClassifier(object):
   default_args = {
-      'model_def_file': ('/tmp/frozen_inception_v3.pb'),
-      'class_labels_file': (os.path.join(REPO_DIRNAME, 'labels.txt')),
+      'model_def_file': ('/tmp/frozen_inception_v3_lfw.pb'),
+      'class_labels_file': (os.path.join(REPO_DIRNAME, 'labels_lfw.txt')),
   }
   for key, val in default_args.iteritems():
     if not os.path.exists(val):
@@ -166,24 +166,26 @@ class ImagenetClassifier(object):
                                    input_mean=0, input_std=255):
     input_name = "file_buffer"
     output_name = "normalized"
-    image_reader = tf.image.decode_png(file_buffer, channels = 3,
-                                       name='png_reader')
 
-    # IF file_name.endswith(".png"):
-    #   image_reader = tf.image.decode_png(file_buffer, channels = 3,
+    image_reader = tf.image.decode_jpeg(file_buffer, channels=3,
+                                        name='jpeg_reader')
+    # if file_name.endswith(".png"):
+    #   image_reader = tf.image.decode_png(file_buffer, channels=3,
     #                                      name='png_reader')
+    # else:
     # elif file_name.endswith(".gif"):
     #   image_reader = tf.squeeze(tf.image.decode_gif(file_buffer,
     #                                                 name='gif_reader'))
     # elif file_name.endswith(".bmp"):
     #   image_reader = tf.image.decode_bmp(file_buffer, name='bmp_reader')
-    # else:
-    #   image_reader = tf.image.decode_jpeg(file_buffer, channels = 3,
     #                                       name='jpeg_reader')
-    float_caster = tf.cast(image_reader, tf.float32)
-    dims_expander = tf.expand_dims(float_caster, 0);
-    resized = tf.image.resize_bilinear(dims_expander, [input_height, input_width])
-    normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
+    image_reader = tf.cast(image_reader, tf.float32)
+    image_reader = tf.image.central_crop(image_reader, central_fraction=0.875)
+    image_reader = tf.expand_dims(image_reader, 0);
+    image_reader = tf.image.resize_bilinear(image_reader,
+                                       [input_height, input_width],
+                                       align_corners=False)
+    normalized = tf.divide(tf.subtract(image_reader, [input_mean]), [input_std])
     sess = tf.Session()
     result = sess.run(normalized)
     return result
@@ -220,7 +222,7 @@ class ImagenetClassifier(object):
     #   # Run inference.
     #   logits, predictions = inception_model.inference(images, NUM_CLASSES + 1)
     #   with tf.Session(graph=graph) as sess:
-    #     with tf.device('/cpu:0'):
+    #     with htf.device('/cpu:0'):
     #       results = sess.run(output_operation.outputs[0],
     #                          {input_operation.outputs[0]: t})
 
@@ -261,11 +263,13 @@ class ImagenetClassifier(object):
       start_time = time.time()
       image_tensor = self._read_tensor_from_image_file(image)
       # Run inference.
-      with tf.Session(graph=self._graph) as sess:
-        with tf.device('/cpu:0'):
-          results = sess.run(self._output_operation.outputs[0],
-                             {self._input_operation.outputs[0]: image_tensor})
-
+      config = tf.ConfigProto(
+        device_count= {'GPU': 0}
+      )
+      with tf.Session(graph=self._graph, config=config) as sess:
+        results = sess.run(self._output_operation.outputs[0],
+                           {self._input_operation.outputs[0]: image_tensor})
+      app.logger.info('classification results: %s' % results)
       results = np.squeeze(results)
       top_k = results.argsort()[-5:][::-1]
       end_time = time.time()
